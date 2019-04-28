@@ -176,7 +176,7 @@ extern "C"
     CAMLprim value
     caml_SkFont_setSubpixel(value vFont, value vShouldBeEnabled)
     {
-        CAMLparam2(vFont, vSubpixel);
+        CAMLparam2(vFont, vShouldBeEnabled);
         auto pFont = static_cast<SkFont *>(Data_custom_val(vFont));
         auto shouldBeEnabled = Bool_val(vShouldBeEnabled);
         pFont->setSubpixel(shouldBeEnabled);
