@@ -6,12 +6,15 @@
     "build": [ [ "refmterr", "dune", "build", "--root", "." ] ],
     "install": [ "esy-installer" ]
   },
-  "peerDependencies": { "ocaml": "~4.6.0" },
+  "peerDependencies": { "ocaml": "~4.7.0" },
   "dependencies": {
     "@esy-ocaml/reason": "^3.3.7",
     "@opam/dune": "*",
-    "esy-skia": "^0.1.7",
+    "esy-skia": "*",
     "refmterr": "^3.1.0"
   },
-  "devDependencies": { "ocaml": "~4.6.0" }
+  "resolutions": {
+      "esy-skia": "github:bryphe/esy-skia#e9e4169"
+  },
+  "devDependencies": { "ocaml": "~4.7.0" }
 }
